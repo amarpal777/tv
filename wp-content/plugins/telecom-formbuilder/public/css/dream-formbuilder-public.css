@@ -1,0 +1,252 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+input[type=checkbox],
+input[type=radio] {
+    width: 15px;
+    height: 15px !important;
+    vertical-align: middle;
+}
+
+label.radio_optn input,
+label.check_optn input {
+    margin-right: 5px;
+}
+
+label.radio_optn,
+label.check_optn {
+    margin-left: 15px;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.dream_form_render .nice-select {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.dream_form_render input.form-control {
+    height: auto;
+    outline: none;
+    box-shadow: none;
+    border: solid 1px #e2eff4;
+    padding: 15px;
+}
+
+.dream_form_render input[type="file"] {
+    padding: 9px 10px;
+}
+
+.dream_big_input_box input.form-control {
+    padding: 20px 25px;
+}
+
+.dream_big_input_box input[type="file"] {
+    padding: 14px 15px;
+}
+
+.dream_form_render textarea.form-control {
+    min-height: 100px;
+    border: solid 1px #e2eff4;
+    outline: none;
+    box-shadow: none;
+    padding: 12px;
+}
+
+.dream_input_wrap {
+    position: relative;
+}
+
+.dream_input_wrap .dream_input_info {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+.dream_input_info .dream_input_tooltip {
+    background: #000;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    bottom: 0;
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 6px;
+    transition: 0.3s;
+    visibility: hidden;
+    opacity: 0;
+    max-width: 500px;
+    width: max-content;
+    z-index: 5;
+    height: max-content;
+    margin: auto;
+    line-height: normal;
+}
+
+.dream_input_info .dream_input_tooltip:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    right: -5px;
+    width: 12px;
+    height: 12px;
+    background: black;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+.dream_input_info .dream_input_info_icon {
+    cursor: pointer;
+}
+
+.dream_input_info .dream_input_info_icon i {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.dream_input_info:hover .dream_input_info_icon i {
+    opacity: 1;
+}
+
+.dream_input_info:hover .dream_input_tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.dm-label-on-border label.dream_label {
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 0 5px;
+    z-index: 1;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #bfc4d5;
+}
+
+.dm-label-on-border .radio,
+.dm-label-on-border .checkbox {
+    border: solid 1px #e2eff4;
+    padding: 11px 0px;
+}
+
+.dm-label-on-border .form-group {
+    margin-bottom: 2rem;
+}
+
+.dm-main-wraper .form-control:focus {
+    box-shadow: none;
+}
+
+.dm-btn-inside-input .dm-btn-inside-button,
+.dream_preview_box .dream_big_input_box .dm-btn-inside-button {
+    position: absolute;
+    right: 20px;
+    bottom: 5px;
+}
+
+.dm-btn-inside-input {
+    position: relative;
+}
+
+.dm-btn-inside-button button {
+    padding: 9.5px 20px;
+}
+
+.dream_big_input_box.dm-label-on-border .radio,
+.dream_big_input_box.dm-label-on-border .checkbox {
+    padding: 16px 0px;
+}
+
+.dream_big_input_box .nice-select {
+    height: 60px;
+    line-height: 58px;
+}
+
+.dream_big_input_box .dm-btn-inside-button button {
+    padding: 12px 20px;
+}
+
+.dream_big_input_box .dm-btn-inside-button {
+    right: 22px;
+    bottom: 7px;
+}
+
+.dm-btn-inside-input input.form-control {
+    padding-right: 70px;
+}
+
+.dm-label-on-border.dream_big_input_box label.dream_label {
+    font-size: 15px;
+}
+
+.dm-label-on-border input::placeholder,
+.dm-label-on-border textarea::placeholder {
+    font-size: 14px;
+}
+
+.datepicker td,
+.datepicker th {
+    width: 25px;
+    height: 25px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.theme-dream .datepicker table tr td.active.active,
+.theme-dream .datepicker table tr td.active:hover,
+.theme-dream .datepicker table tr td.active:hover:active {
+    background: #f50056;
+    background-image: none;
+}
+
+.datepicker.datepicker-dropdown {
+    width: 100%;
+    max-width: 350px;
+}
+
+.dm-btn-inside-input .form-group {
+    margin-bottom: 0;
+}
+
+.dm-btn-inside-input .dream_input_wrap .dream_input_info {
+    right: -20px;
+}
+
+.dm-btn {
+    position: relative;
+}
+
+.dm-btn svg.dm-btn-loader {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -35px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+.dm-btn svg.dm-btn-loader path {
+    stroke: #f44336;
+}
+
+@media screen and (max-width:480px) {
+    .dm-btn-inside-input .dm-btn-inside-button,
+    .dream_preview_box .dream_big_input_box .dm-btn-inside-button {
+        position: unset;
+        margin-top: 10px;
+    }
+    .dm-btn-inside-input .dream_input_wrap .dream_input_info {
+        right: 20px;
+    }
+}
