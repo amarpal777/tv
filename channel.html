@@ -4130,8 +4130,9 @@ We use it here to ensure columns blocks display well across themes.
                                             </div>
                                         </div>
                                         <div class="col-md-8">
+                                            <i class="fa fa-bars hamburger" style="display: none;" id="hamburger_menu"></i>
                                             <div class="dm-main-menu dm-default-header">
-                                                <div class="dm-navbar">
+                                                <div class="dm-navbar" id="navbar">
                                                     <ul>
                 
                                                         <li id="menu-item-545 " class=""menu-item menu-item-type-post_type menu-item-object-page menu-item-547 "><a
@@ -5351,6 +5352,8 @@ We use it here to ensure columns blocks display well across themes.
                                 document.body.className = c;
                             })();
                         </script>
+                                                                        <script src="wp-includes/js/responsive.js"></script>
+
                         <link rel='stylesheet' id='rs-plugin-settings-css' href='/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.9' media='all' />
                         <style id='rs-plugin-settings-inline-css'>
                             #rs-demo-id {}
