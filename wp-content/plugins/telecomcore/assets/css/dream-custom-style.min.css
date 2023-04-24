@@ -1,0 +1,111 @@
+.dm-wh-banner-wrap .list_has_border li,
+.dm-wh-banner-wrap .dm-list.list_has_background li {
+    padding: 10px 20px
+}
+
+.dm-wh-banner-search {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+    max-width: 1170px;
+    margin: -120px auto 0;
+    z-index: 2;
+    position: relative;
+    background: #fff
+}
+
+.dm-wh-banner-search h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px
+}
+
+.dm-wh-banner-search #wdc-style input#Search {
+    background: #f7faff;
+    border-radius: 50px !important;
+    height: 50px !important;
+    border: none;
+    padding: 0 140px 0 20px;
+    font-size: 14px
+}
+
+.dm-wh-banner-search #wdc-style .input-group {
+    box-shadow: none
+}
+
+.dm-wh-banner-search #wdc-style button#Submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 99;
+    border-radius: 50px !important
+}
+
+.dm-wh-banner-search #wdc-style .small button#Submit {
+    height: 50px !important;
+    transform: translateY(0);
+    line-height: normal
+}
+
+.dm-wh-search-list {
+    margin: 20px 0 0;
+    padding: 0
+}
+
+.dm-wh-search-list li {
+    margin-right: 30px;
+    display: inline-block
+}
+
+.dm-wh-search-list li a {
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 30px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    color: #ff5400;
+    font-weight: 600
+}
+
+.dm-wh-search-list li a:after {
+    background: #ff5400;
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .09
+}
+
+.dm-wh-banner-search #wdc-style #Search:focus {
+    border: 1px solid #fff0e9 !important
+}
+
+@media screen and (max-width:767px) {
+    .dm-wh-banner-search #domain-form #wdc-style .input-group {
+        display: table
+    }
+    .dm-wh-banner-search #domain-form #wdc-style input#Search {
+        border-radius: 50px !important;
+        padding: 0 20px
+    }
+    .dm-wh-banner-search #wdc-style button#Submit {
+        position: relative;
+        top: 10px
+    }
+}
+
+@media screen and (max-width:480px) {
+    .dm-wh-banner-search {
+        padding: 30px
+    }
+    .dm-wh-search-list li {
+        margin-right: 10px
+    }
+}
